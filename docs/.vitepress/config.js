@@ -71,7 +71,8 @@ function notesSidebar() {
       text: "Express",
       collapsed: true,
       items: [
-        {text: 'Giriş', link: '/notlar/express/'}
+        {text: 'Giriş', link: '/notlar/express/'},
+        {text: 'Middleware', link: '/notlar/express/middleware'}
       ]
     }
   ]
