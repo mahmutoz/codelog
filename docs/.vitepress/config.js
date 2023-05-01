@@ -7,7 +7,7 @@ export default defineConfigWithTheme({
   lang: "tr-TR",
   title: "CodeLog",
   description: "Yazılım ile ilgili notlarım",
-  lastUpdated: true,
+  lastUpdated: false,
   markdown: {
     lineNumbers: true
   },
@@ -17,6 +17,16 @@ export default defineConfigWithTheme({
     editLink: {
       pattern: 'https://github.com/mahmutoz/codelog/edit/main/docs/:path',
       text: 'Bu sayfayı düzenle',
+    },
+    search: {
+      search: {
+        provider: 'algolia',
+        options: {
+          appId: '...',
+          apiKey: '...',
+          indexName: '...'
+        }
+      }
     },
     docFooter: {
       prev: 'Önceki Sayfa',
