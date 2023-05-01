@@ -4,6 +4,7 @@ import baseConfig from '@vue/theme/config'
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme({
   extends: baseConfig,
+  base: '/codelog/',
   lang: "tr-TR",
   title: "CodeLog",
   description: "Yazılım ile ilgili notlarım",
