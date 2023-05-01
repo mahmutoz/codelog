@@ -8,6 +8,9 @@ export default defineConfigWithTheme({
   title: "CodeLog",
   description: "Yazılım ile ilgili notlarım",
   lastUpdated: true,
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: 'CodeLog',
@@ -23,14 +26,21 @@ export default defineConfigWithTheme({
       label: 'Sayfa İçeriği',
     },
     nav: [
-      { text: 'Anasayfa', link: '/' },
-      { text: 'Notlar', link: '/notlar/' },
+      {
+        text: 'Notlar',
+        items: [
+          { text: 'NodeJS', link: '/notlar/nodejs/' },
+          { text: 'Express', link: '/notlar/express/' },
+        ]
+      },
       { text: 'Kaynaklar', link: '/kaynaklar/' },
+      { text: 'Mülakat Soruları', link: '/mulakat-sorulari/' },
     ],
 
     sidebar: {
-      "/notlar": notesSidebar(),
+      "/notlar/": notesSidebar(),
       "/kaynaklar": sourcesSidebar(),
+      "/mulakat-sorulari": interviewSidebar(),
     },
 
     socialLinks: [
@@ -49,9 +59,19 @@ function notesSidebar() {
     },
     {
       text: "NodeJS",
-      collapsed: false,
+      collapsed: true,
       items: [
-        {text: 'Giriş', link: 'notlar/nodejs/'},
+        {text: 'Giriş', link: '/notlar/nodejs/'},
+        {text: 'Web Sunucusu Oluşturma', link: '/notlar/nodejs/web-sunucusu-olusturma'},
+        {text: 'Html Ekleme', link: '/notlar/nodejs/html-ekleme'},
+        {text: 'package.json Ayarları', link: '/notlar/nodejs/package-json-ayarlari'},
+      ]
+    },
+    {
+      text: "Express",
+      collapsed: true,
+      items: [
+        {text: 'Giriş', link: '/notlar/express/'}
       ]
     }
   ]
@@ -65,6 +85,18 @@ function sourcesSidebar() {
         {text: 'Giriş', link: '/kaynaklar/'},
         {text: 'CSS', link: '/kaynaklar/css'},
         {text: 'JavaScript', link: '/kaynaklar/javascript'},
+      ]
+    }
+  ]
+}
+
+function interviewSidebar() {
+  return [
+    {
+      text: 'Başlangıç',
+      link: '/mulakat-sorulari/',
+      items: [
+        {text: 'HTML', link: '/mulakat-sorulari/html'}
       ]
     }
   ]

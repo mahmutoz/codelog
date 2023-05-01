@@ -3,4 +3,6 @@ layout: docs
 title: Kaynaklar
 ---
 
-Yazılım öğrenirken faydalandığım kaynaklar.
+::: tip ✨ Unutma!
+Her zaman en iyi kaynak, öğrenmeye çalıştığın teknolojinin resmi dokümanlarıdır. 
+:::

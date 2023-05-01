@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "CodeLog"
-  tagline: "Yazılım ile ilgili notlarım"
+  tagline: "Yazılım öğrenme sürecimde edindiğim bilgileri ve öğrendiklerimi kendime not olarak tuttuğum dijital not defterim."
   actions:
     - theme: brand
       text: Başlangıç
@@ -14,10 +14,13 @@ hero:
       link: https://github.com/mahmutoz/codelog
 
 features:
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Notlar
+    icon: 📌
+    details: Kullandığım teknolojiler hakkında edindiğim bilgileri ve öğrendiklerimi kendime not olarak tuttuğum bölümdür.
   - title: Kaynaklar
-    details: Yazılım öğrenirken faydalandığım kaynaklar.
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    icon: 📚
+    details: Yazılım öğrenirken kullandığım kaynakları ve araçları paylaştığım bölümdür.
+  - title: Mülakat Soruları
+    icon: ⁉️
+    details: Yazılım mülakatlarında sıkça sorulan ve girdiğim mülakatlarda bizzat karşılaştığım soruları içeren bölümdür.
 ---

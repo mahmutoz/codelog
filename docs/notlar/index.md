@@ -5,4 +5,10 @@ title: Başlangıç
 
 # Başlangıç
 
-Merhaba, ben Mahmutoz. Bu blogda yazılım ile ilgili notlarımı paylaşıyorum. Yazılım öğrenirken faydalandığım kaynaklar ve notlarımı paylaşacağım.
+Notlar bölümü, yazılım öğrenirken edindiğim bilgileri ve öğrendiklerimi kendime not olarak tuttuğum bölümdür. Yeni 
+bilgiler öğrendikçe bu bölümü güncelleyeceğim. Faydalı olması dileğiyle.
+
+İçerikler:
+
+- [Nodejs](/notlar/nodejs/)
+- [Express](/notlar/express/)
